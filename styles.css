@@ -36,6 +36,17 @@ h2 {
     line-height: 40px;
 }
 
+h4 {
+  font-size: 14pt;
+  line-height: 30px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.source {
+  font-size: 10pt;
+}
+
 header p {
     padding-bottom: 20px;
     line-height: 24px;
@@ -132,4 +143,18 @@ footer {
     padding: 5px;
     background-color: rgba(255, 255, 255, .75);
     color: #280606;
+}
+
+article {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 75px;
+}
+
+article:last-child, article img {
+  padding-bottom: 15px;
+}
+
+article p {
+  text-align: left;
 }
