@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    font-family: courier;
+    background-color: black;
+    color: maroon;
+    text-align: center;
+}
+
+header {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 48pt;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+form, #results {
+    width: 1000px;
+    height: 760px;
+    left: 50%;
+    margin-left: -500px;
+    margin-bottom: 50px;
+}
+
+form {
+    position: absolute;
+    z-index: -1;
+}
+
+#results {
+    background-color: #1c1c1c;
+    color: maroon;
+    position: relative;
+    animation-name: scene-two;
+    animation-duration: 2.5s;
+    padding: 60px;
+    padding-top: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form div {
+    margin-top: 20px;
+}
+
+input, #results a {
+    font-family: courier;
+    font-size: 12pt;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 80%;
+    font-weight: bold;
+}
+
+input[type=text]:focus {
+    background-color: #f98989;
+}
+
+input[type=submit], input[type=reset], #results a {
+    height: 40px;
+    width: 15%;
+    background-color: #ffd3e0;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 25px;
+    transition-property: background-color;
+    transition-duration: .25s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, #results a:hover {
+    height: 40px;
+    width: 15%;
+    background-color: #f98989;
+    cursor: pointer;
+    color: black;
+}
+
+#results a {
+    display: block;
+    background-color: #4c0000;
+    padding: 10px;
+    margin: auto;
+    color: black;
+}
+
+#results a:hover {
+    background-color: maroon;
+}
+
+#results p {
+    font-size: 16pt;
+    text-align: left;
+    padding: 20px;
+    display: block;
+}
+
+#column-1, #column-2 {
+    width: 50%;
+    float: left;
+    padding: 25px;
+}
+
+#fade {
+    animation-name: fade-to-black;
+    animation-duration: 2.5s;
+    animation-play-state: paused;
+}
+
+@keyframes scene-two {
+    from {
+        left: 50%;
+        margin-left: -500px;
+        top: 786px;
+        background-color: #686868;
+    }
+    to {
+        left: 50%;
+        margin-left: -500px;
+        top: 0px;
+        background-color: #1c1c1c;
+    }
+}
+
+@keyframes fade-to-black {
+    0% {
+        background-color: lightpink;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        color: maroon;
+    }
+}
