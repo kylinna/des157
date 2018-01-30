@@ -1,15 +1,23 @@
 "use strict";
 
-console.log("reading");
+console.log("we good.");
 
-document.test.onreset = resetForm;
-document.test.onsubmit = processForm;
+document.test.onreset = resetForm; // Form reset to a function
+document.test.onsubmit = processForm; // Form submit to a function
+
 results.setAttribute('class', 'hide'); // Results are initially hidden
+
+// Getting the breakup music ready
+var broke = new Audio();
+broke.src = "audio/breakup.mp3";
 
 function processForm() {
     // Show the results when the form is processed
     results.setAttribute('class', 'show');
+
+    // Initiate the dramatic transition
     fade();
+    broke.play();
 
     // Each paragraph of results
     var myMsg = document.getElementById('first');
@@ -42,15 +50,15 @@ function processForm() {
     third.innerHTML =
         goodbye;
 
-    return false;
+    return false; // Prevent reloading
 }
 
 function resetForm() {
-    myMsg.innerHTML = "";
-    results.setAttribute('class', 'hide');
+    myMsg.innerHTML = ""; // Clear the message
+    results.setAttribute('class', 'hide'); // Hide the results
 }
 
 function fade() {
-    // Starts the results animation
+    // Starts the results animation (in the CSS, I had it paused since I used keyframe, which are time-based)
     document.getElementById('fade').style.animationPlayState = "running";
 }
