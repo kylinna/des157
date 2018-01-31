@@ -19,7 +19,7 @@ body {
 
 header {
     font-family: 'Reenie Beanie', cursive;
-    font-size: 48pt;
+    font-size: 46pt;
 }
 
 footer {
@@ -42,8 +42,8 @@ footer a:hover {
 
 h1 {
     margin: 0;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 form, #results {
@@ -51,7 +51,6 @@ form, #results {
     height: 760px;
     left: 50%;
     margin-left: -500px;
-    margin-bottom: 50px;
 }
 
 form {
@@ -65,8 +64,8 @@ form {
     position: relative;
     animation-name: scene-two;
     animation-duration: 2.5s;
-    padding: 60px;
-    padding-top: 40px;
+    padding: 40px;
+    padding-top: 20px;
 }
 
 label {
@@ -105,7 +104,7 @@ input[type=submit], input[type=reset], #results a {
     margin: 5px;
     margin-top: 25px;
     transition-property: background-color;
-    transition-duration: .25s;
+    transition-duration: .5s;
 }
 
 input[type=submit]:hover, input[type=reset]:hover, #results a:hover {
@@ -138,7 +137,7 @@ input[type=submit]:hover, input[type=reset]:hover, #results a:hover {
 #column-1, #column-2 {
     width: 50%;
     float: left;
-    padding: 25px;
+    padding: 10px;
 }
 
 #fade {

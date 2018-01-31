@@ -9,7 +9,7 @@ results.setAttribute('class', 'hide'); // Results are initially hidden
 
 // Getting the breakup music ready
 var broke = new Audio();
-broke.src = "audio/breakup.mp3";
+broke.src = "../../audio/breakup.mp3";
 
 function processForm() {
     // Show the results when the form is processed
