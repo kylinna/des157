@@ -16,7 +16,6 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .container {
@@ -41,6 +40,7 @@ h4 {
   line-height: 30px;
   color: #000000;
   font-weight: normal;
+  padding-bottom: 30px;
 }
 
 .source {
@@ -55,8 +55,11 @@ header p {
 ol, ul {
     padding-left: 50px;
     padding-top: 10px;
-    height: 340px;
     text-align: left;
+}
+
+ol, #portal-ul {
+  height: 340px;
 }
 
 ol {
@@ -68,7 +71,6 @@ ul {
 }
 
 li {
-    letter-spacing: normal;
     font-weight: normal;
 }
 
@@ -107,11 +109,11 @@ li {
 
 #audience-col2 {
   width: 500px;
-  text-align: left;
 }
 
 #audience-col1, #audience-col2 {
-  height: 700px;
+  height: 400px;
+  text-align: left;
 }
 
 #audience-col2 h2 {
@@ -124,9 +126,24 @@ font-size: 14pt;
 margin: 0;
 }
 
+#audience-col2 ul:first-child {
+  padding-top: 50px;
+}
+
+.audience-ul {
+  padding-bottom: 18px;
+}
+
+#audience-col1 ul:last-child, #audience-col2 ul:nth-child(4), #audience-col2 ul:nth-child(6)  {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
 #jonah {
-  max-width: 250px;;
+  max-width: 250px;
+  display:block;
+  margin:auto;
+  padding-bottom: 15px;
 }
 
 #content {
