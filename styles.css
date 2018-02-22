@@ -7,32 +7,32 @@ Studio 0: "styles.css"
 */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bold;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
 
 .container {
-    margin: auto;
-    width: 800px;
+  margin: auto;
+  width: 800px;
 }
 
 h1 {
-    color: #f46060;
-    font-size: 40pt;
-    padding-top: 20px;
-    line-height: 48px;
+  color: #f46060;
+  font-size: 40pt;
+  padding-top: 20px;
+  line-height: 48px;
 }
 
 h2 {
-    font-size: 18pt;
-    line-height: 40px;
+  font-size: 18pt;
+  line-height: 40px;
 }
 
 h4 {
@@ -48,14 +48,14 @@ h4 {
 }
 
 header p {
-    padding-bottom: 20px;
-    line-height: 24px;
+  padding-bottom: 20px;
+  line-height: 24px;
 }
 
 ol, ul {
-    padding-left: 50px;
-    padding-top: 10px;
-    text-align: left;
+  padding-left: 50px;
+  padding-top: 10px;
+  text-align: left;
 }
 
 ol, #portal-ul {
@@ -63,34 +63,34 @@ ol, #portal-ul {
 }
 
 ol {
-    list-style-type: upper-roman;
+  list-style-type: upper-roman;
 }
 
 ul {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 li {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 #col1, #col2, #audience-col1, #audience-col2 {
-    color: #280606;
-    padding: 20px;
-    width: 400px;
-    float: left;
+  color: #280606;
+  padding: 20px;
+  width: 400px;
+  float: left;
 }
 
 #col1, #audience-col1 {
-    background-color: #ea4e4e;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  background-color: #ea4e4e;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #col2, #audience-col2 {
-    background-color: #e04848;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  background-color: #e04848;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #audience-col1 ul, #audience-col2 ul {
@@ -117,13 +117,13 @@ li {
 }
 
 #audience-col2 h2 {
-font-size: 38pt;
-margin: 0;
+  font-size: 38pt;
+  margin: 0;
 }
 
 #audience-col2 h4 {
-font-size: 14pt;
-margin: 0;
+  font-size: 14pt;
+  margin: 0;
 }
 
 #audience-col2 ul:first-child {
@@ -134,15 +134,15 @@ margin: 0;
   padding-bottom: 18px;
 }
 
-#audience-col1 ul:last-child, #audience-col2 ul:nth-child(4), #audience-col2 ul:nth-child(6)  {
+#audience-col1 ul:last-child, #audience-col2 ul:nth-child(4), #audience-col2 ul:nth-child(6) {
   list-style-type: disc;
   margin-left: 20px;
 }
 
 #jonah {
   max-width: 250px;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   padding-bottom: 15px;
 }
 
@@ -174,30 +174,30 @@ margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #280606;
+  text-decoration: none;
+  color: #280606;
 }
 
 a:hover {
-    color: #F46060;
+  color: #F46060;
 }
 
 a:active {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 p, footer a, li {
-    font-size: 12pt;
+  font-size: 12pt;
 }
 
 footer {
-    clear: both;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, .75);
-    color: #280606;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, .75);
+  color: #280606;
 }
 
 article {
@@ -210,6 +210,6 @@ article:last-child, article img {
   padding-bottom: 15px;
 }
 
-article p {
+p, article p {
   text-align: left;
 }
