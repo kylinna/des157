@@ -211,5 +211,9 @@ article:last-child, article img {
 }
 
 p, article p {
+  text-align: center;
+}
+
+.left {
   text-align: left;
 }

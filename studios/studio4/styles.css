@@ -1,0 +1,160 @@
+/* Include padding in overall width/height */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Shifting gradient background, prevent scrolling */
+
+body {
+    background: linear-gradient(45deg, #00F7B7, #C90FCA, #F99100);
+    background-size: 600% 600%;
+    animation: back-gradient 75s ease infinite;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+/* Position the header and add intro swipe right */
+
+header {
+    position: absolute;
+    z-index: 2;
+    padding: 50px;
+    animation: prompt 1s;
+    left: 175px;
+    bottom: 50%;
+    color: white;
+}
+
+
+/* Get rid of margins, adjust font size */
+
+h1 {
+    margin: 0;
+    font-size: 45pt;
+}
+
+
+/* Same as above */
+
+h2 {
+    margin: 0;
+    font-size: 13pt;
+    font-weight: normal;
+}
+
+
+/* Adjustments to the play/pause button */
+
+#play-pause {
+    display: block;
+    margin-top: 20px;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+
+/* Play/pause/control button hover effects */
+
+#play-pause:hover, button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+/* Position and align the shape control button nav */
+
+nav {
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+
+/* Adjustments to buttons */
+
+button {
+    width: 75px;
+    display: inline;
+    border-radius: 8px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .5);
+    border: none;
+    outline: none;
+    color: white;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+
+/* Change opacity on active buttons */
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* Position and style footer */
+
+footer {
+    color: rgba(255, 255, 255, .5);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .25);
+    text-align: center;
+    font-size: 11pt;
+}
+
+
+/* Target links in footer */
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Change color when hovering link in footer */
+
+footer a:hover {
+    color: rgba(255, 255, 255, .75)
+}
+
+
+/* Change color when link in footer is active */
+
+footer a:active {
+    color: rgba(255, 255, 255, .3)
+}
+
+
+/* Keyframes animation used above to swipe in the header */
+
+@keyframes prompt {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 175px;
+    }
+}
+
+
+/* Keyframes animation for the shifting background */
+
+@keyframes back-gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
