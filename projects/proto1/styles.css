@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+#home {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  height: 25px;
+  width: 85px;
+}
+
+#home:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#home:active {
+  background-color: grey;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  height: 750px;
+  overflow: hidden;
+}
+
+#main-gradient {
+  /* background: linear-gradient(45deg, #00F7B7, #C90FCA, #F99100);
+  background-size: 600% 600%;
+  animation: back-gradient 75s ease infinite; */
+}
+
+h1, h2, h3 {
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+}
+
+li {
+  height: 100px;
+  padding: 50px;
+  border: 2px solid orange;
+  border-radius: 8px;
+  margin: 25px;
+}
+
+li:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+input[type=button] {
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  outline: none;
+  margin-top: 40px;
+  transition: background-color 0.5s;
+  background-color: white;
+}
+
+input[type=button]:hover {
+  background-color: #6684ff;
+  color: white;
+  cursor: pointer;
+}
+
+#page1, #page2, #page3, #page4, #page5 {
+  position: absolute;
+  height: 500px;
+  width: 750px;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -375px;
+  display: block;
+}
+
+#page2, #page3, #page4, #page5 {
+  display: none;
+}
