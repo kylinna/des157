@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+#home {
+  float: left;
+  padding-right: 10px;
+  transition: color .5s;
+}
+
+#main-nav {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+#home:hover, #side-icon:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, .5);
+}
+
+#home:active {
+  color: red;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  height: 750px;
+  overflow: hidden;
+  background-color: orange;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42pt;
+}
+
+p {
+  color: red;
+  font-size: 11pt;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.construction {
+  color: red;
+}
+
+.sidenav h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+}
+
+li {
+  display: inline-block;
+  height: 200px;
+  width: 150px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, .25);
+  border-radius: 8px;
+  margin: 25px;
+  transition: background-color 0.5s;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+li:hover {
+  background-color: orange;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .25);
+}
+
+input[type=button] {
+  height: 40px;
+  width: 100px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid white;
+  margin-top: 40px;
+  color: white;
+  transition: background-color 0.5s;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+input[type=button]:hover {
+  background-color: rgba(255, 255, 255, .25);
+  cursor: pointer;
+}
+
+img {
+  transition: opacity .5s;
+  opacity: 1;
+}
+img:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+#page1, #page2, #page3, #page4, #page5 {
+  position: absolute;
+  height: 500px;
+  width: 1000px;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -500px;
+  display: block;
+}
+
+#page1 {
+  margin-top: -100px;
+}
+
+#page2, #page3, #page4, #page5 {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, .75);
+  color: #280606;
+}
+
+a {
+  text-decoration: none;
+  color: #280606;
+}
+
+a:hover {
+  color: #F46060;
+}
+
+a:active {
+  color: #FFFFFF;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.75);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+}
