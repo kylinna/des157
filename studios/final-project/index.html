@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>:'(</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js'></script>
+</head>
+
+<body>
+
+  <nav id="main-nav">
+  </nav>
+
+  <section id="page1">
+    <h1>WELCOME TO THE VISUALIZER</h1>
+    <p>go ahead and start the simulation process by clicking the button below!</p>
+
+
+    <input type="button" id="begin" value="begin">
+  </section>
+
+  <section id="page2">
+    <h2>SELECT A SONG</h2>
+    <nav>
+      <ul>
+        <li id="song1">SYNTH</li>
+        <li id="song2">AHOY</li>
+        <li id="song3">FUNKY</li>
+        <li id="song4">FRESH</li>
+        <li id="stream">DEVICE <span> (coming soon) </span> </li>
+      </ul>
+
+      <img src="images/forth.png" alt="forward" id="next1">
+    </nav>
+  </section>
+
+  <section id="page3">
+    <h2>SELECT A VISUALIZER</h2>
+    <nav>
+      <ul>
+        <li id="vis1">WAVES</li>
+        <li id="vis2">RADIAL</li>
+        <li id="vis3">BARS</li>
+        <li id="vis4">DRAW <span> (coming soon) </span></li>
+      </ul>
+
+      <img src="images/back.png" alt="backward" id="prev2">
+      <img src="images/forth.png" alt="forward" id="next2">
+    </nav>
+  </section>
+
+  <section id="page4">
+    <h2 id="the-last">CUSTOMIZE &amp; ENJOY</h2>
+
+  </section>
+
+  <button class="sidenav-btn js-sidenav-btntoggle">
+     <span class="sidenav-btn__line"></span>
+     <span class="sidenav-btn__line"></span>
+     <span class="sidenav-btn__line"></span>
+   </button>
+
+  <nav class="sidenav js-sidenav" tabindex="-1" role="navigation">
+    <h4>color</h4>
+    <div class='colorPicker'>
+      <button class='colorbtn' id='color1'></button>
+      <button class='colorbtn' id='color2'></button>
+      <button class='colorbtn' id='color3'></button>
+      <button class='colorbtn' id='color4'></button>
+      <button class='colorbtn' id='color5'></button>
+      <button class='colorbtn' id='color6'></button>
+      <button class='colorbtn' id='color7'></button>
+      <button class='colorbtn' id='color8'></button>
+      <button class='colorbtn' id='color9'></button>
+      <button class='colorbtn' id='color10'></button>
+      <button class='colorbtn' id='color11'></button>
+      <button class='colorbtn' id='color12'></button>
+    </div>
+    <h4>line weight</h4>
+    <button class='weightbtn' id='weight1'>1</button>
+    <button class='weightbtn' id='weight2'>2</button>
+    <button class='weightbtn' id='weight3'>3</button>
+    <button class='weightbtn' id='weight4'>4</button>
+    <h4>volume</h4>
+    <input type="range" min="1" max="100" value="75" id="volume-slider">
+
+    <p>Here is the sidebar where you can customize your selected pattern to your hearts content!</p>
+
+  </nav>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
