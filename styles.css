@@ -40,6 +40,15 @@ h3 {
   text-align: left;
 }
 
+#audience-h3 {
+  text-align: right;
+}
+
+#link-proto3 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .brief-spread {
   margin-bottom: 20px;
 }
@@ -77,6 +86,16 @@ ol {
 
 ul {
   list-style-type: disc;
+}
+
+.audience-list {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.audience-list li {
+  font-size: 11pt;
+  line-height: 14pt;
 }
 
 li {

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PROTOTYPE 3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js'></script>
+</head>
+
+<body>
+  <nav id="main-nav">
+  <div id="home">home</div>
+  <img src="images/sidebar.png" alt="sidebar icon" id="side-icon" width="30" height="30">
+</nav>
+
+  <section id="page1">
+    <h1>WELCOME TO <span class="construction">(TITLE PENDING)</span>.</h1>
+    <input type="button" id="begin" value="BEGIN" />
+  </section>
+
+  <section id="page2">
+    <h2>SELECT A SONG</h2>
+    <nav>
+      <ul>
+        <li id="song1">SONG 1</li>
+        <li id="song2">SONG 2</li>
+        <li id="song3">SONG 3</li>
+        <li id="song4">SONG 4</li>
+      </ul>
+
+      <img src="images/forth.png" alt="forward" id="next1">
+    </nav>
+  </section>
+
+  <section id="page3">
+    <h2>SELECT A COLOR</h2>
+    <nav>
+      <ul>
+        <li id="color1">GREEN</li>
+        <li id="color2">BLUE</li>
+        <li id="color3">PINK</li>
+        <li id="color4">PURPLE</li>
+      </ul>
+
+      <img src="images/back.png" alt="backward" id="prev1">
+      <img src="images/forth.png" alt="forward" id="next2">
+    </nav>
+  </section>
+
+  <section id="page4">
+    <h2>SELECT A TEXTURE</h2>
+    <nav>
+      <ul>
+        <li id="back1">CIRCLES</li>
+        <li id="back2">SQUARES</li>
+        <li id="back3">LINES</li>
+        <li id="back4">STARS</li>
+      </ul>
+
+      <img src="images/back.png" alt="backward" id="prev2">
+      <img src="images/forth.png" alt="forward" id="next3">
+    </nav>
+  </section>
+
+  <section id="page5">
+
+  </section>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+    <h3>(UNDER CONSTRUCTION)</h3>
+    <p>In addition to color, background, and volume, this sidebar will house many other controls to allow the user to further customize their simulation.</p>
+    <h4>color</h4>
+    <input type="range" min="1" max="100" value="50" id="color-slider">
+    <h4>background</h4>
+    <input type="range" min="1" max="100" value="25" id="texture-slider">
+    <h4>volume</h4>
+    <input type="range" min="1" max="100" value="75" id="volume-slider">
+  </div>
+
+  <footer>
+    <a href="mailto:kwilliamsrudd@ucdavis.edu">CONTACT ME</a> |
+    <a href="https://validator.w3.org/check?url=referer">VALID HTML 5</a> |
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">VALID CSS</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
