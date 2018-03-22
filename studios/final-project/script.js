@@ -1,5 +1,9 @@
-"use strict";
+//  a project by katy + kylinna
+// external patterns and references:
+// 2D Sine Wave, by unicar on codepen.io (https://codepen.io/unicar/)
 
+"use strict";
+var home = document.querySelector('#home');
 var page1 = document.querySelector('#page1');
 var page2 = document.querySelector('#page2');
 var page3 = document.querySelector('#page3');
@@ -419,3 +423,25 @@ function gridOtherwave() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
+// Clear everything and go home
+home.addEventListener('click', function() {
+    page1.style.display = 'block';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+
+    var radialSelected = false;
+    var barzSelected = false;
+    var waveSelected = false;
+
+    songA = true;
+    songB = false;
+    songC = false;
+    songD = false;
+
+    clear();
+    a.stop();
+    b.stop();
+    c.stop();
+    d.stop();
+});
