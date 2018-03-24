@@ -8,8 +8,6 @@ var page1 = document.querySelector('#page1');
 var page2 = document.querySelector('#page2');
 var page3 = document.querySelector('#page3');
 var page4 = document.querySelector('#page4');
-var page5 = document.querySelector('#page5');
-var page6 = document.querySelector('#page6');
 
 var begin = document.querySelector('#begin');
 var next1 = document.querySelector('#next1');
@@ -64,7 +62,7 @@ var waveform, analyze;
 var circSize;
 
 // for radial
-var r = 150; // radius of ring;
+var r = 150; // radius of ring
 var dr = 70; // outer lines
 
 // for color selector
@@ -119,8 +117,6 @@ function setup() {
   dx = (TWO_PI / period) * spacing;
   dots = new Array(15);
   currentColor = colorOptions[4];
-
-
 }
 
 function draw() {
@@ -300,14 +296,6 @@ vis3.addEventListener('click', function() {
   barzSelected = true;
 });
 
-vis4.addEventListener('click', function() {
-  vis1.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-  vis2.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-  vis3.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-  vis4.style.backgroundColor = 'rgba(255, 255, 255, .25)';
-});
-
-
 
 //sliding menu
 var navToggle = document.getElementsByClassName('js-sidenav-btntoggle')[0];
@@ -419,29 +407,45 @@ function gridOtherwave() {
   }
 }
 
-//resize function when size of window changes
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+
 
 // Clear everything and go home
 home.addEventListener('click', function() {
+
     page1.style.display = 'block';
     page2.style.display = 'none';
     page3.style.display = 'none';
+    page4.style.display = 'none';
 
-    var radialSelected = false;
-    var barzSelected = false;
-    var waveSelected = false;
+    vis1.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    vis2.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    vis3.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    vis4.style.backgroundColor = 'rgba(255, 255, 255, 0)';
 
-    songA = true;
+    song1.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    song2.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    song3.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    song4.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+
+    radialSelected = false;
+    barzSelected = false;
+    waveSelected = false;
+
+    songA = false;
     songB = false;
     songC = false;
     songD = false;
 
-    clear();
     a.stop();
     b.stop();
     c.stop();
     d.stop();
+
+    clear();
 });
+
+
+//resize function when size of window changes
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
